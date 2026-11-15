@@ -1,0 +1,33 @@
+{
+  "name": "background-email-processing-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "test": "vitest",
+    "testscript": "tsx src/test.ts",
+    "worker": "tsx watch src/workers/worker.ts",
+    "start": "tsx watch --clear-screen=false src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "bullmq": "^6.7.2",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "ioredis": "^6.0.0",
+    "redis": "^6.3.1",
+    "resend": "^6.38.1"
+  }
+}
